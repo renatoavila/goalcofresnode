@@ -60,7 +60,6 @@ const exclude = async(req,res) => {
         const { idCofre } = req.params;
 
         const retorno = await remover(idCofre);
-        //cofre.id = retorno.insertId;
         res.sendStatus(200);
 
     } catch(erro){
